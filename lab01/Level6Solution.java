@@ -14,8 +14,8 @@ public class Level6Solution
 
     // ----------------------------------------------------------
     /**
-     * This method holds the instructions for actions the bot will take
-     * when the program runs
+     * Adds a bot to the world and gives it actions to move to
+     * all the blue tiles and light them up
      */
     public void myProgram()
     {
