@@ -21,7 +21,7 @@ public interface PostLabQuestions
      * Place your letter choice answer (A-D) between the two double-quotes
      * in the following line.
      */
-    String question1 = "";
+    String question1 = "C";
 
 
     // ----------------------------------------------------------
@@ -37,7 +37,7 @@ public interface PostLabQuestions
      * Place your letter choice answer (A-D) between the two double-quotes
      * in the following line.
      */
-    String question2 = "";
+    String question2 = "B";
 
  
     // ----------------------------------------------------------
@@ -54,7 +54,7 @@ public interface PostLabQuestions
      * Place your letter choice answer (A-D) between the two double-quotes
      * in the following line.
      */
-    String question3 = "";
+    String question3 = "D";
 
  
     // ----------------------------------------------------------
@@ -71,7 +71,7 @@ public interface PostLabQuestions
      * Place your letter choice answer (A-D) between the two double-quotes
      * in the following line.
      */
-    String question4 = "";
+    String question4 = "D";
 
  
     // ----------------------------------------------------------
@@ -87,5 +87,5 @@ public interface PostLabQuestions
      * Place your letter choice answer (A-D) between the two double-quotes
      * in the following line.
      */
-    String question5 = "";
+    String question5 = "A";
 }
