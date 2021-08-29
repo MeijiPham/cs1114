@@ -8,7 +8,7 @@ import student.micro.lightbot.*;
  * @version 2021.08.26
  */
 public class Level6Solution
-  extends Level6
+    extends Level6
 {
     //~ Methods ...............................................................
 
