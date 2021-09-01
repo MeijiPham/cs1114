@@ -13,9 +13,7 @@ public class TurretBot
         this.turnLeft();
         
         for (int i = 0; i < 3; i++) {
-            this.move();
-            this.turnRight();
-            this.move();
+            super.patrolCorner();
         }
         
         this.turnLeft();
