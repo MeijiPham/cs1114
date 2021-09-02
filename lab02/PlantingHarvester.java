@@ -6,7 +6,7 @@ import student.micro.jeroo.*;
  *  a different jeroo to harvest a row of flowers while planting new ones.
  *  `Hop2AndPick()` is changed to fit this action. To use it, call the 
  *  `harvestRow()` method in myProgram() with an object 
- *  of `SkippingHarvester`.
+ *  of `PlantingHarvester`.
  *  
  *
  *  @author Meiji Pham (meijipham0601)
