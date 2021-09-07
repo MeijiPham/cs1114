@@ -31,19 +31,25 @@ public class Harvester
 
 
     //~ Method ...............................................................
-    // Hops forward and picks a flower
+    /** 
+     * Hops forward and picks a flower 
+     */
     public void hopAndPick() 
     {
         this.hop();
         this.pick();
     }
-    // Hops and picks flower twice in a row
+    /** 
+     * Hops and picks flower twice in a row 
+     */
     public void hop2AndPick() 
     {
         this.hopAndPick();
         this.hopAndPick();
     }
-    // Harvests an entire row of flowers
+    /** 
+     * Harvests an entire row of flowers 
+     */
     public void harvestRow() 
     {
         this.hop2AndPick();

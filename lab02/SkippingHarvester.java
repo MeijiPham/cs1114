@@ -33,7 +33,9 @@ public class SkippingHarvester
 
 
     //~ Methods ...............................................................
-    // Hop, pick a flower, then hop
+    /** 
+     * Hop, pick a flower, then hop
+     */
     public void hop2AndPick() 
     {
         this.hopAndPick();

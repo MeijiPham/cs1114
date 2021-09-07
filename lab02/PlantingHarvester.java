@@ -33,7 +33,9 @@ public class PlantingHarvester
 
 
     //~ Methods ...............................................................
-    // Hops, picks, hop, and then plant a flower
+    /** 
+     * Hops, picks, hop, and then plant a flower 
+     */
     public void hop2AndPick() 
     {
         this.hopAndPick();

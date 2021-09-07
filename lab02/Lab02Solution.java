@@ -28,8 +28,10 @@ public class Lab02Solution
 
 
     //~ Methods ...............................................................
-    // Adds 3 jeroos on the island and have them perform tasks as indicated
-    // above
+    /** 
+     * Adds 3 jeroos on the island and have them perform tasks as indicated
+     * above 
+     */
     public void myProgram() 
     {
         Harvester max = new Harvester();
