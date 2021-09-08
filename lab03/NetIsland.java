@@ -2,9 +2,10 @@ import student.micro.jeroo.*;
 
 //-------------------------------------------------------------------------
 /**
- *  Write a one-sentence summary of your class here.
- *  Follow it with additional details about its purpose, what abstraction
- *  it represents, and how to use it.
+ *  This class contains the main method of the program. It creates a jeroo
+ *  named `joey` and adds it into the island. The jeroo will then collect all
+ *  the flowers and disable as many nets as it can with the amount of
+ *  flowers it collected. To run the program, run the application file.
  *
  *  @author Meiji Pham (meijipham0601)
  *  @version 2021.09.07
@@ -23,7 +24,9 @@ public class NetIsland
         super();
     }
     
-    
+    /**
+     * Runs the program
+     */
     public void myProgram() 
     {
         NetRemover joey = new NetRemover();

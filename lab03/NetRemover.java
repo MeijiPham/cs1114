@@ -1,9 +1,9 @@
 import student.micro.jeroo.*;
 //-------------------------------------------------------------------------
 /**
- *  Write a one-sentence summary of your class here.
- *  Follow it with additional details about its purpose, what abstraction
- *  it represents, and how to use it.
+ *  This class contains all the methods required for the jeroo to collect
+ *  all the flowers and disable the nets. It includes all the behaviors
+ *  the jeroo will perform to carry out the action previously mentioned.
  *
  *  @author Meiji Pham (meijipham0601)
  *  @version 2021.09.07
@@ -35,10 +35,8 @@ public class NetRemover
      */
     public void pickFlowersAndDisableNets() 
     {       
-        this.turn(RIGHT);
         this.pickFlowers();
         this.goToTop();
-        this.turn(RIGHT);
         this.travelToNet();
         this.disableNets();
     }
@@ -47,7 +45,9 @@ public class NetRemover
      * position
      */
     public void pickFlowers() 
-    {       
+    {   
+        this.turn(RIGHT);
+        
         while (this.seesFlower(AHEAD)) 
         {
             this.hop();
@@ -63,7 +63,7 @@ public class NetRemover
     {
         this.turn(RIGHT);
         this.turn(RIGHT);
-        
+
         while (!this.seesWater(AHEAD)) 
         {
             this.hop();
@@ -74,24 +74,28 @@ public class NetRemover
      */
     public void travelToNet() 
     {
+        this.turn(RIGHT);
+        
         while (!this.seesNet(AHEAD)) 
         {
             this.hop();
         }
     }
     /**
-     * The jeroo will disable all the nets within its row
+     * For every net within a row, the jeroo will disable one if it has
+     * a flower for it; if it runs out of flowers, it will stop at where it
+     * is
+     * 
      */
     public void disableNets() 
-    {     
-        while (this.seesNet(AHEAD)) 
-        {
+    {   
+        while (this.seesNet(AHEAD) && this.hasFlower()) 
+        {     
             this.toss();
             this.hop();
             if (this.seesNet(RIGHT)) {
                 this.turn(RIGHT);
             }
-        }
+        }        
     }
-
 }
