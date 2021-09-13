@@ -45,7 +45,7 @@ public interface PostLabQuestions
      * Place your letter choice answer (A-D) between the two double-quotes
      * in the following line.
      */
-    String question2 = "D";
+    String question2 = "A";
 
 
     // ----------------------------------------------------------

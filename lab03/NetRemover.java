@@ -76,7 +76,7 @@ public class NetRemover
     {
         this.turn(RIGHT);
         
-        while (!this.seesNet(AHEAD)) 
+        while (this.isClear(AHEAD)) 
         {
             this.hop();
         }
