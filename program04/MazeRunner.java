@@ -113,10 +113,13 @@ public class MazeRunner
      */
     public void traverseDirection() 
     {
-        this.checkAndHop();
-        while (this.getX() != 1 || this.getY() != 1) 
+        if (!this.seesWater(AHEAD)) 
         {
-            this.hugRightWall();
+            this.checkAndHop();
+            while (this.getX() != 1 || this.getY() != 1) 
+            {
+                this.hugRightWall();
+            }
         }
     }
     /**

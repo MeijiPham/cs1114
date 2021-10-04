@@ -228,11 +228,12 @@ public class MazeRunnerTest
         assertThat(this.runner.isFacing(SOUTH)).isTrue();
     }
     /**
-     * Tests traverseDirection() method. Jeroo should collect all flowers
-     * and disable all nets in a certain direction of the maze. It should
-     * then end up at its initial position.
+     * Tests traverseDirection() method for when the jeroo isn't facing water. 
+     * Jeroo should collect all flowers and disable all nets in a certain 
+     * direction. It should then end up at its initial position.
+     * 
      */
-    public void testTraverseDirection() 
+    public void testTraverseDirectionWaterNotAhead() 
     {
         this.island.addObject(this.runner, 1, 1);
         
@@ -244,6 +245,21 @@ public class MazeRunnerTest
         assertThat(this.island.hasNetAt(3, 1)).isFalse();
         assertThat(this.island.countFlowers()).isEqualTo(3);
         assertThat(this.island.countNets()).isEqualTo(1);
+    }
+    /**
+     * Tests traverseDirection() method for when the jeroo is facing water. 
+     * It should remain where it is at.
+     * 
+     */
+    public void testTraverseDirectionWaterAhead() 
+    {
+        this.island.addObject(this.runner, 1, 7);
+        
+        this.runner.turn(RIGHT);
+        this.runner.traverseDirection();
+        
+        assertThat(this.runner.getX()).isEqualTo(1);
+        assertThat(this.runner.getY()).isEqualTo(7);
     }
     /**
      * Tests turnTowardsSouth() method. Jeroo should keep turning until
